@@ -71,19 +71,45 @@
 // }
 // findLetter("Apalon")
 
+// Task 5
+
+
+let nums = [2, 7, 11, 15];
+let target = 9;
+
+function twoSum(nums, target) {
+    for (let i = 0; i < nums.length; i++) {
+        let complement = target - nums[i];
+        for (let j = i + 1; j < nums.length; j++) {
+            if (nums[j] === complement) {
+                return [i, j];
+            }
+        }
+    }
+
+}
+
+
+
+let result = twoSum(nums, target);
+console.log(result);
+
 // Task 6
 
-let array = [2,4,6,3,2,4]
-let duplicated_array =[]
+// let array = [2,4,6,3,2,4]
+// let duplicated_array =[]
 
-function findDuplicate() {
-  for (let i = 0; i < array.length; i++) {
+// function findDuplicate() {
+//   for (let i = 0; i < array.length; i++) {
    
-  if (!duplicated_array.includes(array[i])) {
-      duplicated_array.push(array[i])
-  }
+//   if (!duplicated_array.includes(array[i])) {
+//       duplicated_array.push(array[i])
+//   }
 
-  }
-    console.log(duplicated_array); 
-}
-findDuplicate()
+//   }
+//     console.log(duplicated_array); 
+// }
+// findDuplicate()
+
+
+
