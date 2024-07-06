@@ -57,3 +57,33 @@
 // }
 // countTotalSum(2, 1, 4, 3, 8)
 
+// Task 4
+
+// function findLetter(str) {
+//     let count_letter = 0;
+//     for (let i = 0; i < str.length; i++) {
+//        if (str[i].toLowerCase() == "a") {
+//         count_letter ++
+//        }
+        
+//     }
+//     console.log(`There is ${count_letter} a in String`);
+// }
+// findLetter("Apalon")
+
+// Task 6
+
+let array = [2,4,6,3,2,4]
+let duplicated_array =[]
+
+function findDuplicate() {
+  for (let i = 0; i < array.length; i++) {
+   
+  if (!duplicated_array.includes(array[i])) {
+      duplicated_array.push(array[i])
+  }
+
+  }
+    console.log(duplicated_array); 
+}
+findDuplicate()
